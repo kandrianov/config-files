@@ -1,0 +1,17 @@
+{
+  "name": "config-files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Konstantsin Andrianov",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "debug": "^2.2.0",
+    "fs-jetpack": "^0.7.2",
+    "js-yaml": "^3.5.4"
+  }
+}
