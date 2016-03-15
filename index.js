@@ -1,16 +1,13 @@
 'use strict';
 
-const debug = require('debug')('parser');
 const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
 
 function loadYAMLConfig(filepath) {
-  debug(`Loading YAML config file: ${filepath}`);
   try {
     return yaml.safeLoad(fs.readFileSync(filepath, 'utf8')) || {};
   } catch (e) {
-    debug(`Error reading YAML file: ${filepath}`);
     e.message = `Cannot read config file: ${filepath}'\nError: ${e.message}`;
     throw e;
   }
